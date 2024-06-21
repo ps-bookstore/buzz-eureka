@@ -62,4 +62,4 @@ jobs:
           docker pull heldenar/eureka-server:latest
           docker stop eureka-server || true
           docker rm eureka-server || true
-          docker run -d --name test-app --network api_network -p 8761:8761 heldenar/test:latest
+          docker run -d --name eureka-server --network api_network -p 8761:8761 heldenar/eureka-server:latest
