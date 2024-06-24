@@ -13,4 +13,4 @@ spring:
   lifecycle:
     timeout-per-shutdown-phase: 10s
   profiles:
-    active:
+    active: dev
