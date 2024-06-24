@@ -1,0 +1,16 @@
+server:
+  port: 8761
+  shutdown: graceful
+
+
+spring:
+  application:
+    name: test-eureka-local
+  security:
+    user:
+      name: admin
+      password: 1234
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
+  profiles:
+    active:

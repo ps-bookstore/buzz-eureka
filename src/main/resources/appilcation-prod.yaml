@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: true
+  client:
+    register-with-eureka: false # 자기 자신을 서비스로 등록하지 않음
+    fetch-registry: true # 마이크로서비스 인스턴스 목록을 로컬에 캐시할 것인지 여부. 서비스 탐색 등의 목적.
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server:8761/eureka/
