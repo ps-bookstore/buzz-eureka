@@ -8,3 +8,12 @@ eureka:
     fetch-registry: true # 마이크로서비스 인스턴스 목록을 로컬에 캐시할 것인지 여부. 서비스 탐색 등의 목적.
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@43.202.250.117:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
