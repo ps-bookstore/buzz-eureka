@@ -12,3 +12,16 @@ spring:
     timeout-per-shutdown-phase: 10s
   profiles:
     active: dev
+
+eureka:
+  dashboard:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
