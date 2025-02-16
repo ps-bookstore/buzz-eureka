@@ -10,8 +10,7 @@ spring:
       password: 1234
   lifecycle:
     timeout-per-shutdown-phase: 10s
-  profiles:
-    active: dev
+
 
 eureka:
   dashboard:
