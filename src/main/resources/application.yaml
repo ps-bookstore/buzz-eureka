@@ -1,4 +1,5 @@
 server:
+  port: 8761
   shutdown: graceful
 
 spring:
@@ -10,7 +11,8 @@ spring:
       password: 1234
   lifecycle:
     timeout-per-shutdown-phase: 10s
-
+  profiles:
+    active: dev
 
 eureka:
   dashboard:
